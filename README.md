@@ -75,19 +75,19 @@ This project demonstrates an end-to-end **data pipeline using Apache NiFi, AWS S
 Snowflake-NIFI real Project/
 │
 ├── AWS S3/
-│   ├── bucket_structure.png
-│   ├── policy_file.json
+│   ├── S3_bucket_structure.txt
+│   ├── s3_policy.json
 │   └── sqs_notification_config.json
 │
 ├── snowflake/
-│   ├── tables.sql
-│   ├── views.sql
+│   ├── Table Creation.sql
+│   ├── Load data.sql
 │   ├── streams.sql
-│   ├── tasks.sql
-│   └── snowpipe.sql
+│   ├── Merge data SCD1.sql
+│   └── SCD 2.sql
 │
 ├── NIFI_Template/
-│   └── nifi_flow.xml
+│   └── nifi-s3-to-snowflake.xml
 │
 ├── Image/
 │   └── architecture_diagram.png
@@ -96,7 +96,7 @@ Snowflake-NIFI real Project/
 ├── README.md
 └── LICENSE
 
-## ✅ Key Features
+## 🔑 Key Features
 
 -Fully automated, real-time pipeline.
 -Handles SCD Type 2 slowly changing dimension logic.
@@ -104,11 +104,13 @@ Snowflake-NIFI real Project/
 -Cloud-native and cost-efficient.
 -Easily extendable to handle other data types or sources.
 
-## 📌 Challenges Faced
+
+## ⚠️ Challenges Faced
 
 -IAM permission setup for Snowflake–S3 integration.
 -Automating Snowpipe notifications via SQS.
 -Handling dynamic updates and deletions in SCD 2 flow.
 -Debugging NiFi upload and port issues.
+
 
 
