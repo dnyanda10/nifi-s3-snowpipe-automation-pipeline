@@ -10,9 +10,7 @@ This project demonstrates an end-to-end **data pipeline using Apache NiFi, AWS S
 
 ## 🧱 Architecture Diagram
 
-![Architecture Diagram](path/to/your/architecture-image.png)
-
-*Replace with your actual architecture image or GitHub image path once uploaded.*
+![NiFi S3 Snowpipe Architecture](image/architecture.png)
 
 
 ## 🛠️ Tools & Technologies
@@ -112,4 +110,5 @@ Snowflake-NIFI real Project/
 -Automating Snowpipe notifications via SQS.
 -Handling dynamic updates and deletions in SCD 2 flow.
 -Debugging NiFi upload and port issues.
+
 
