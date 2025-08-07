@@ -105,22 +105,23 @@ Snowflake-NIFI real Project/
 ## 🔑 Key Features
 
 ```
--Fully automated, real-time pipeline.
--Handles SCD Type 2 slowly changing dimension logic.
--No Lambda function used – NiFi manages all file movement.
--Cloud-native and cost-efficient.
--Easily extendable to handle other data types or sources.
+- Fully automated, real-time pipeline.
+- Handles SCD Type 2 slowly changing dimension logic.
+- No Lambda function used – NiFi manages all file movement.
+- Cloud-native and cost-efficient.
+- Easily extendable to handle other data types or sources.
 ```
 
 
 ## ⚠️ Challenges Faced
 
 ```bash
--IAM permission setup for Snowflake–S3 integration.
--Automating Snowpipe notifications via SQS.
--Handling dynamic updates and deletions in SCD 2 flow.
--Debugging NiFi upload and port issues.
+- IAM permission setup for Snowflake–S3 integration.
+- Automating Snowpipe notifications via SQS.
+- Handling dynamic updates and deletions in SCD 2 flow.
+- Debugging NiFi upload and port issues.
 
 ```bash
+
 
 
