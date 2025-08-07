@@ -1,0 +1,25 @@
+{
+  "QueueConfigurations": [
+    {
+      "Id": "snowpipe-s3-event",
+      "QueueArn": "arn:aws:sqs:ap-south-1:021375251070:snowpipe-queue",
+      "Events": [
+        "s3:ObjectCreated:*"
+      ],
+      "Filter": {
+        "Key": {
+          "FilterRules": [
+            {
+              "Name": "prefix",
+              "Value": "stream_data/"
+            },
+            {
+              "Name": "suffix",
+              "Value": ".csv"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

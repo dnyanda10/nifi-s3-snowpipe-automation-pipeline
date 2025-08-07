@@ -1,0 +1,5 @@
+Bucket Name: dw-snowflake-realtime
+
+Structure:
+stream_data/  → NiFi uploads here
+          

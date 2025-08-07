@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<template encoding-version="1.3"><groupId>nifi-upload-s3-group</groupId><id>nifi-upload-s3-template</id><name>UploadToS3Flow</name><description>NiFi Flow: ListFile -&gt; FetchFile -&gt; PutS3Object</description><timestamp>2025-08-07T07:19:24.963470</timestamp><snippet><processGroups><processGroup><id>pg-upload-to-s3</id><name>UploadToS3Flow</name></processGroup></processGroups></snippet></template>
