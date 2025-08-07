@@ -3,14 +3,17 @@
 This project demonstrates an end-to-end **data pipeline using Apache NiFi, AWS S3, and Snowflake**, implementing **SCD Type 2** handling and **automated ingestion with Snowpipe**. It is designed to handle customer data ingestion, historical tracking, and real-time updates using cloud-native tools.
 
 
+
 ## 📌 Project Overview
 
 **Goal:** Automate the ingestion of customer data files from a local directory → upload to S3 via NiFi → auto-load into Snowflake using Snowpipe → apply SCD Type 2 logic to track changes historically.
 
 
+
 ## 🧱 Architecture Diagram
 
 ![NiFi S3 Snowpipe Architecture](image/architecture.png)
+
 
 
 ## 🛠️ Tools & Technologies
@@ -22,6 +25,7 @@ This project demonstrates an end-to-end **data pipeline using Apache NiFi, AWS S
 - **Snowflake** (Data warehouse)
 - **Snowpipe** (Continuous data loading)
 - **SQL (Merge, Stream, Task)** for SCD Type 2 handling
+
 
 
 ## 🔄 Pipeline Flow
@@ -67,7 +71,7 @@ This project demonstrates an end-to-end **data pipeline using Apache NiFi, AWS S
 - Trust relationship established for **Snowflake external stage**.
 - Used `sqs_notification_config.json` for automated Snowpipe triggers.
 
----
+
 
 ## 📂 Project Structure
 
@@ -95,8 +99,25 @@ Snowflake-NIFI real Project/
 ├── .gitignore
 ├── README.md
 └── LICENSE
+```
 
 
+## 🔑 Key Features
+
+-Fully automated, real-time pipeline.
+-Handles SCD Type 2 slowly changing dimension logic.
+-No Lambda function used – NiFi manages all file movement.
+-Cloud-native and cost-efficient.
+-Easily extendable to handle other data types or sources.
+
+
+
+## ⚠️ Challenges Faced
+
+-IAM permission setup for Snowflake–S3 integration.
+-Automating Snowpipe notifications via SQS.
+-Handling dynamic updates and deletions in SCD 2 flow.
+-Debugging NiFi upload and port issues.
 
 
 
